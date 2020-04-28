@@ -102,6 +102,7 @@
       <DependentUpon>Game.settings</DependentUpon>
     </Compile>
     <Compile Include="Model\GameModel.cs" />
+    <Compile Include="Model\HotReloadEffect.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form\GameForm.resx">
@@ -174,6 +175,7 @@
   <ItemGroup>
     <Content Include="Media\cajaMadera4.jpg" />
     <Content Include="Media\LogoTGC-TgcScene.xml" />
+    <Content Include="Shaders\Example.fx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -126,16 +126,7 @@ namespace TGC.Group.Form
                 //Renderizo si es que hay un ejemplo activo.
                 if (Modelo != null)
                 {
-                    //Solo renderizamos si la aplicacion tiene foco, para no consumir recursos innecesarios.
-                    if (ApplicationActive())
-                    {
-                        Modelo.Tick();
-                    }
-                    else
-                    {
-                        //Si no tenemos el foco, dormir cada tanto para no consumir gran cantidad de CPU.
-                        Thread.Sleep(100);
-                    }
+                    Modelo.Tick();
                 }
                 // Process application messages.
                 Application.DoEvents();
